@@ -1,2 +1,5 @@
 <?php
-echo "hello world!";
+require_once "views/hello.php";
+
+if (isset($_GET['name']))
+    echo 'ようこそ、' . $_GET['name'] . 'さん。';
